@@ -14,6 +14,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@savvywombat/tailwindcss-grid-areas'),
-  ],
+  plugins: [],
 };
