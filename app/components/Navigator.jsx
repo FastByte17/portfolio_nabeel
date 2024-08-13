@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 export default function Navigator() {
     const { navigation } = useData()
     return (
-        <div className="p-4 fixed top-[50%] left-[5%] rounded-lg backdrop-blur-sm bg-white/30">
+        <div className="p-4 fixed top-[50%] left-[5%] rounded-lg backdrop-blur-sm bg-white/30 z-50">
             <ul className="flex flex-col gap-2">
                 {navigation.map((route, idx) =>
                 (<Link
