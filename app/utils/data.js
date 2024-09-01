@@ -12,22 +12,47 @@ export const useData = () => {
         { name: "Projects", to: "projects" },
     ];
 
-    const mainTech = ["CSS3", "HTML5", "javaScript", "TypeScript"];
+    const mainTech = ["CSS3", "HTML5", "JavaScript", "TypeScript"];
 
 
     const technologies = [
-        { name: "JavaScript (ES6+)" },
-        { name: "TypeScript" },
-        { name: "C#" },
-        { name: "React" },
-        { name: "ASP.NET Blazor" },
-        { name: "Tailwind" },
-        { name: "Node.js" },
-        { name: "React Native" },
-        { name: "Next.js" },
-        { name: "Git" },
-        { name: "HTML5" },
-        { name: "CSS" },
+        {
+            name: "JavaScript (ES6+)", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-javascript-plain colored"></i>
+        },
+        {
+            name: "TypeScript", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-typescript-plain colored"></i>
+        },
+        {
+            name: "C#", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-csharp-plain colored"></i>
+        },
+        {
+            name: "React", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-react-original colored"></i>
+        },
+        {
+            name: "ASP.NET Blazor", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-blazor-original colored"></i>
+        },
+        {
+            name: "Tailwind", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-tailwindcss-original colored"></i>
+        },
+        {
+            name: "Node.js", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-nodejs-plain-wordmark colored"></i>
+        },
+        {
+            name: "Next.js", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-nextjs-plain colored"></i>
+        },
+        {
+            name: "Git", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-git-plain colored"></i>
+        },
+        {
+            name: "HTML5", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-html5-plain-wordmark colored"></i>
+        },
+        {
+            name: "CSS", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-css3-plain colored"></i>
+        },
+        {
+            name: "Ionic", icon: (size) => <i style={{ fontSize: `${size}em` }} class="devicon-ionic-original-wordmark colored"></i>
+
+        }
     ];
 
 
@@ -39,7 +64,7 @@ export const useData = () => {
         },
         {
             type: "linkedin",
-            src: "",
+            src: "https://www.linkedin.com/in/hussainnabeel/",
             icon: (style) => <FaLinkedin className={style} />
         },
         {
@@ -49,7 +74,7 @@ export const useData = () => {
         },
         {
             type: "github",
-            src: "",
+            src: "https://github.com/FastByte17",
             icon: (style) => <FaGithubSquare className={style} />
         },
         {
@@ -60,11 +85,11 @@ export const useData = () => {
     ];
 
     const contactDetails = [
-        {
+        /* {
             type: "phoneNumber",
             value: "+358",
             icon: <AiFillPhone className="h-5 w-5" />
-        },
+        }, */
         {
             type: "email",
             value: "sample@gmail.com",
@@ -77,11 +102,21 @@ export const useData = () => {
         }
     ];
 
+    const aboutDescription = {
+        desc: `A self-motivated, innovative individual and a team player with a
+                curiosity to learn, an eye for detail and a deep-rooted passion
+                for software development. I am seeking an opportunity to work
+                with a company that will enable me to design, develop and work
+                on creating a rewarding digital experience for users.`
+    };
+
+
     return {
         navigation,
         technologies,
         mainTech,
         socialsDetails,
         contactDetails,
+        aboutDescription
     }
 }

@@ -1,22 +1,13 @@
 import { useState } from "react";
-import { useData } from '../utils/data';
-import { Link } from "react-scroll";
 import ToolBar from "./ToolBar";
+
 
 
 export default function NavBar() {
     const [hamburger, setHamburger] = useState(true);
-    const [active, setActive] = useState(localStorage.getItem("activeTab") || "Home");
-    const { navigation } = useData();
-
-    const handleChangeRoute = (e, navItem) => {
-        e.preventDefault();
-        setActive(navItem.name)
-        localStorage.setItem("activeTab", navItem.name)
-    }
 
     return (
-        <nav className="w-screen flex flex-wrap md:flex-nowrap justify-between items-center z-50 backdrop-blur-md opacity-90 transition-all delay-100 gap-2 w-full p-2">
+        <nav className="area-header bg-teal-800 flex flex-wrap md:flex-nowrap justify-between items-center z-50 backdrop-blur-md opacity-90 transition-all delay-100 gap-2 p-2 w-full">
 
             {/*Brand Name*/}
             <div className="flex items-center justify-center gap-1 pl-2">
