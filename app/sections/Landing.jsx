@@ -6,7 +6,7 @@ export default function Landing() {
 
 
     return (
-        <Element name="landing" className={`border border-red-500 row-auto flex-grow`}>
+        <Element name="landing" className={`row-auto flex-grow`}>
             <LandingComponent />
         </Element>
     );

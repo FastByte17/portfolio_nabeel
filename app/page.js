@@ -11,7 +11,7 @@ export default function Home() {
     <div className="grid-areas-layout font-Oxygen min-w-screen min-h-screen text-white box-border">
       <Navigator />
       <Nav />
-      <main className="area-main flex flex-col border-2 border-green-500">
+      <main className="area-main flex flex-col">
         <Landing />
         <Skills />
         <Projects />

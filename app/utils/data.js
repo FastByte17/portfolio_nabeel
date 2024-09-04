@@ -7,7 +7,6 @@ import { BsStackOverflow } from "react-icons/bs";
 export const useData = () => {
     const navigation = [
         { name: "Landing", to: "landing" },
-        { name: "About", to: "about" },
         { name: "Skills", to: "skills" },
         { name: "Projects", to: "projects" },
     ];
@@ -110,6 +109,44 @@ export const useData = () => {
                 on creating a rewarding digital experience for users.`
     };
 
+    const listOfProjects = [
+        {
+            title: "Car Repair App",
+            description: `Project for Bachelor's Thesis at OAMK. This app is designed to provide an overview and manage the employee working hours and their tasks.
+                          The app can be used by the admin (boss), manager, and the employees.`,
+            technologies: ["Ionic React", "TypeScript", "Chakra UI", "Prisma ORM", "PostgreSQL", "TanStack Query"],
+            image: {
+                src: "/project_images/car_repair_app_inspection.png",
+                alt: "Car Repair App Homepage"
+            },
+            github: "https://github.com/FastByte17/Car-Repair-App",
+        },
+
+        {
+            title: "Ranked_Quiz_Game",
+            description: "A quiz game where you guess which company has the highest market value.",
+            technologies: ["Next.JS", "TypeScript", "TailwindCSS"],
+            image: {
+                src: "/project_images/ranked_quiz_game.png",
+                alt: "Ranked Quiz Game"
+            },
+            github: "https://github.com/FastByte17/Ranked_Quiz_Game",
+            websiteLink: "https://ranked-quiz-game.vercel.app/"
+        },
+        {
+            title: "Localhostess3000",
+            description: "A Restaurant Web App Project at OAMK during Web Development course in 2020",
+            technologies: ["React.js", "React Router", "Axios", "Google Maps", "Express.JS", "bcrypt", "DBeaver"],
+            image: {
+                src: "/project_images/localhostess3000.png",
+                alt: "Homepage of localhostess3000"
+            },
+            github: "https://github.com/latehuov/din19sp_advanced_project"
+        }
+    ]
+
+
+
 
     return {
         navigation,
@@ -117,6 +154,7 @@ export const useData = () => {
         mainTech,
         socialsDetails,
         contactDetails,
-        aboutDescription
+        aboutDescription,
+        listOfProjects
     }
 }
