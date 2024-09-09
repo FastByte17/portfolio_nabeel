@@ -8,6 +8,7 @@ export const useData = () => {
     const navigation = [
         { name: "Landing", to: "landing" },
         { name: "Skills", to: "skills" },
+        { name: "Experiences", to: "experiences" },
         { name: "Projects", to: "projects" },
     ];
 
@@ -145,6 +146,47 @@ export const useData = () => {
         }
     ]
 
+    const experiences = [
+        {
+            title: "Car Repair App",
+            description: `A Fullstack Hybrid Web Application for Automotive repair
+                         businesses in which employee shifts, tasks, and their status
+                         (i.e. In Progress or Done) can be seen and organized by the
+                         Manager and Admin. The app can be used by the admin (boss),
+                         manager, and the employees.`,
+            technologies: ["Ionic React", "TypeScript", "Chakra UI", "Prisma ORM", "PostgreSQL", "TanStack Query"],
+            startDate: "May 2023",
+            endDate: "October 2023",
+            companyName: "Dilhamr Oy",
+            location: "Helsinki, Finland"
+        },
+
+        {
+            title: "CavokApp Flight Club | Project Associated with Oulu UAS",
+            description: `A webpage for Flight Clubs wherein clubs can add members,
+                         log flight times and receive invoices as per their flight club
+                         membership fees.Applied my knowledge of JavaScript and
+                         React.`,
+            technologies: ["React", "JavaScript", "CSS", "Angular", "PHP", "Twig", "Docker"],
+            startDate: "January 2023",
+            endDate: "May 2023",
+            companyName: "CavokApp Flight Club",
+            location: "Oulu, Finland",
+        },
+        {
+            title: "Intern Software Developer",
+            description: `Worked on a project as part of the Company-Oriented
+                         Product Development courses. Further advanced my Front-
+                         End development skills. Worked with C# and its frameworks
+                         namely ASP.NET Blazor.`,
+            technologies: ["ASP.NET", "Blazor", "CSS3", "HTML5", "Bootstrap", "JSON"],
+            startDate: "March 2022",
+            endDate: "November 2022",
+            companyName: "ROHM Semiconductor Europe",
+            location: "Oulu, Finland",
+        }
+    ]
+
 
 
 
@@ -155,6 +197,7 @@ export const useData = () => {
         socialsDetails,
         contactDetails,
         aboutDescription,
-        listOfProjects
+        listOfProjects,
+        experiences
     }
 }

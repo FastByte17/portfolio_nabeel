@@ -3,7 +3,7 @@ import Footer from "./sections/Footer";
 import Landing from "./sections/Landing";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
-//import Experience from "./sections/Experience";
+import Experiences from "./sections/Experiences";
 import Navigator from "./components/Navigator";
 
 export default function Home() {
@@ -11,9 +11,10 @@ export default function Home() {
     <div className="grid-areas-layout font-Oxygen min-w-screen min-h-screen text-white box-border">
       <Navigator />
       <Nav />
-      <main className="area-main flex flex-col">
+      <main className="area-main flex flex-col bg-teal-800">
         <Landing />
         <Skills />
+        <Experiences />
         <Projects />
       </main>
       <Footer />
