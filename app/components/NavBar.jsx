@@ -11,7 +11,7 @@ export default function NavBar() {
 
             {/*Hamburgher Icon for mobile*/}
             <button
-                className="w-10 h-10 relative flex  md:hidden p-2 mr-4 text-sm text-gray-500 rounded-lg bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:bg-gray-700 dark:focus:ring-gray-600"
+                className="w-10 h-10 relative flex  md:hidden p-2 mr-4 text-sm text-white rounded-lg bg-[#578d74]-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:bg-[#578d74]-700 dark:focus:ring-gray-600"
                 onClick={() => setHamburger((prev) => !prev)}>
                 <span className="sr-only">Open main menu</span>
                 <div className="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
