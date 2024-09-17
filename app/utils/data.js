@@ -85,19 +85,15 @@ export const useData = () => {
     ];
 
     const contactDetails = [
-        /* {
-            type: "phoneNumber",
-            value: "+358",
-            icon: <AiFillPhone className="h-5 w-5" />
-        }, */
+
         {
             type: "email",
-            value: "sample@gmail.com",
+            value: "nabeelbaig962@gmail.com",
             icon: <MdEmail className="h-5 w-5" />
         },
         {
             type: "location",
-            value: "helsinki, talo",
+            value: "Helsinki, Finland",
             icon: <MdLocationOn className="h-5 w-5" />
         }
     ];
